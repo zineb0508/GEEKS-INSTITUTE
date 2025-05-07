@@ -66,43 +66,4 @@ for sandwich in sandwich_orders:
 
 print("Finished sandwiches:", finished_sandwiches)
 
-# daliy challenge 0 :
 
-number = input("Enter a number please!")
-lentgh = int(input('Enter a lentgh please!'))
-multiples = []
-
-for i in range(1, lentgh + 1):
-    multiples.append(number * i)
-
-print("list of  mutiples")
-print(multiples)
-
-# daily challenge 1 :
-
-
-while True :
-    
-    string = input("Enter a word! (or type 'exit' to stop): ")
-
-    if string == "exit":
-      
-       break # stop the loop if the user type "exit".
-    
-result = ""
-previous_char =""
-
-for lettre in string:
-    if lettre != previous_char:
-        result += lettre
-        previous_char = lettre 
-        
-print("Cleaned Word ", result) # <- Only one final output here
-
-
-
-
-
-
-    
-    
