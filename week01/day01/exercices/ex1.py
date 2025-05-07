@@ -35,7 +35,71 @@ print("My favorite numbers:", my_fav_numbers)
 print("Friend's favorite numbers:", friend_fav_numbers)
 print("Our favorite numbers:", our_fav_numbers)
 
-# DAILY CHALLENGES :
+# exercice07 :
+
+basket = ["Banana", "Apples", "Oranges", "Blueberries"]
+basket.remove("Banana")
+
+
+basket.remove("Blueberries")
+
+
+basket.append("Kiwi")
+
+
+basket.insert(0, "Apples")
+
+
+print(basket.count("Apples"))
+basket.clear()
+print(basket)
+ #exercice08 :
+
+sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
+while "Pastrami sandwich" in sandwich_orders:
+    sandwich_orders.remove("Pastrami sandwich")
+    
+finished_sandwiches = []
+for sandwich in sandwich_orders:
+    print(f"I made your {sandwich}.")
+    finished_sandwiches.append(sandwich)
+
+print("Finished sandwiches:", finished_sandwiches)
+
+# daliy challenge 0 :
+
+number = input("Enter a number please!")
+lentgh = int(input('Enter a lentgh please!'))
+multiples = []
+
+for i in range(1, lentgh + 1):
+    multiples.append(number * i)
+
+print("list of  mutiples")
+print(multiples)
+
+# daily challenge 1 :
+
+
+while True :
+    
+    string = input("Enter a word! (or type 'exit' to stop): ")
+
+    if string == "exit":
+      
+       break # stop the loop if the user type "exit".
+    
+result = ""
+previous_char =""
+
+for lettre in string:
+    if lettre != previous_char:
+        result += lettre
+        previous_char = lettre 
+        
+print("Cleaned Word ", result) # <- Only one final output here
+
+
 
 
 
