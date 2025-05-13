@@ -32,6 +32,12 @@ last_name = 'Benichou' ;
  SELECT student_id FROM student
  WHERE student_id = 1 OR student_id = 3;
  SELECT birth_date FROM student WHERE birth_date >=  '2000_01_1';
+ SELECT first_name, last_name, birth_date FROM student;
+ SELECT first_name, last_name, birth_date FROM student ORDER BY last_name LIMIT 6;
+ SELECT first_name, last_name, birth_date FROM student ORDER BY birth_date DESC LIMIT 1;
+ SELECT * FROM student LIMIT 3 OFFSET 2;
+ 
+ 
  
  
  
