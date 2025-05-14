@@ -5,22 +5,11 @@
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
-            "connectionTimeout": 30,
             "name": "geeks",
-            "database": "Hollywood",
-            "username": "zineberziki",
-            "password": "wac193758"
-        },
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "geeks",
-            "database": "public",
-            "username": "zineb",
-            "connectionTimeout": 30,
-            "password": "wac193758"
+            "database": "dvdrental",
+            "username": "postgres",
+            "password": "wac193758",
+            "connectionTimeout": 30
         }
     ]
 }
