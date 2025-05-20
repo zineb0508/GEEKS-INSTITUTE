@@ -1,0 +1,157 @@
+
+
+
+let people = ["Greg", "Mary", "Devon", "James"];
+
+// Part I - 
+
+// 1. Remove "Greg"
+people.shift(); 
+
+// 2. 
+people[2] = "Jason"; 
+
+// 3.
+people.push("Zineb"); // ["Mary", "Devon", "Jason", "Zineb"]
+
+// 4.
+console.log("Index of Mary:", people.indexOf("Mary")); // Output: 0
+
+// 5.
+let peopleCopy = people.slice(1, people.length - 1); // ["Devon", "Jason"]
+console.log("Copied array (without Mary and Zineb):", peopleCopy);
+
+// 6. 
+console.log("Index of Foo:", people.indexOf("Foo")); // Output: -1
+
+
+// 7. 
+let last = people[people.length - 1];
+console.log("Last element in the array:", last); // Output: Zineb
+
+//  Part II
+
+// 1. 
+console.log("All people in the array:");
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i]);
+}
+
+// 2. 
+console.log("Logging until 'Devon':");
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i]);
+  if (people[i] === "Devon") {
+    break;
+  }
+}
+// exercice 02:
+
+
+const colors = ["blue", "red", "green", "purple", "black"];
+
+for (let i = 0; i < colors.length; i++) {
+  console.log(`My #${i + 1} choice is ${colors[i]}`);
+}
+//exercice 03:
+
+
+let number = prompt("Enter a number:");
+
+
+number = Number(number);
+
+
+while (number < 10 || isNaN(number)) 
+    {
+  number = prompt("Number is too small or not a number. Please enter a number greater than or equal to 10:");
+  number = Number(number); 
+}
+
+console.log("Thank you! You entered:", number);
+
+//exercice 04:
+
+
+const building = {
+  numberOfFloors: 4,
+  numberOfAptByFloor: {
+    firstFloor: 3,
+    secondFloor: 4,
+    thirdFloor: 9,
+    fourthFloor: 2,
+  },
+  nameOfTenants: ["Sarah", "Dan", "David"],
+  numberOfRoomsAndRent: {
+    sarah: [3, 990],
+    dan: [4, 1000],
+    david: [1, 500],
+  },
+};
+
+// 1. 
+console.log(building.numberOfFloors);
+
+// 2.
+console.log(building.numberOfAptByFloor.firstFloor);
+console.log(building.numberOfAptByFloor.thirdFloor);
+
+// 3. 
+console.log(building.nameOfTenants[1]); // Dan
+console.log(building.numberOfRoomsAndRent.dan[0]); // 4
+
+// 4. 
+let sarahRent = building.numberOfRoomsAndRent.sarah[1];
+let davidRent = building.numberOfRoomsAndRent.david[1];
+let danRent = building.numberOfRoomsAndRent.dan[1];
+
+if (sarahRent + davidRent > danRent) {
+  building.numberOfRoomsAndRent.dan[1] = 1200;
+}
+
+console.log(building.numberOfRoomsAndRent.dan[1]); 
+
+//exercice 05:
+// 1. 
+const family = {
+  father: "Ahmed",
+  mother: "Layla",
+  daughter: "Zineb",
+  son: "Youssef"
+};
+
+// 2. 
+console.log("Keys:");
+for (let key in family) {
+  console.log(key);
+}
+
+// 3. 
+console.log("Values:");
+for (let key in family) {
+  console.log(family[key]);
+}
+//exercice06 :
+const details = {
+  my: 'name',
+  is: 'Rudolf',
+  the: 'reindeer'
+};
+
+let sentence = "";
+
+// 
+for (let key in details) {
+  sentence += key + " " + details[key] + " ";
+}
+
+console.log(sentence.trim()); // Output: my name is Rudolf the reindeer
+//exercice07:
+const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+
+let initials = names.map(name => name[0]);
+ 
+initials.sort();
+let secretName = initials.join("");
+
+console.log("Secret Society Name:", secretName); // Output: "ABJKPS"
