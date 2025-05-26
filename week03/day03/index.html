@@ -1,62 +1,52 @@
-!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Hotel Cost Calculator</title>
-</head>
-<body>
-    <button onclick="hotelCost()">Start Calculation</button>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                border: 2px solid white;
+                color: white;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+                border: 5px solid blue
+            }
+            .listPlanets {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px; /* space between planets */
+                align-items: center;
+                justify-content: center;  
+            
+            }
+        </style>
+    </head>
+    <body>
+      
+    <section class="listPlanets"></section>
+    <script src="daily_challenge.js"></script>
 
-    <script src="exerciceXP.js"></script>
-</body>
-</html>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users List</title>
-</head>
-<body>
-
-    <div id="container">Users:</div>
-    <ul class="list">
-        <li>John</li>
-        <li>Pete</li>
-    </ul>
-    <ul class="list">
-        <li>David</li>
-        <li>Sarah</li>
-        <li>Dan</li>
-    </ul>
-
-    <!-- Link to the external JavaScript file -->
-    <script src="exerciceXP.js"></script>
-</body>
-</html>
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Navbar Exercise</title>
-</head>
-<body>
-
-  <div id="navBar">
-    <ul>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">My Friends</a></li>
-      <li><a href="#">Messenger</a></li>
-      <li><a href="#">My Pics</a></li>
-    </ul>
-  </div>
-
-  <script src="exerciceXP.js"></script>
-</body>
+    
+    </body>
 </html>

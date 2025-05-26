@@ -199,7 +199,7 @@ window.onload = function () {
   console.log("First link text:", firstLi.textContent);
   console.log("Last link text:", lastLi.textContent);
 };
-
+typeof[]
 
 
     
