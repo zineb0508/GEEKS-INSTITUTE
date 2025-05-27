@@ -1,4 +1,4 @@
-from menu_item import MenuItem
+from week02.day04.restaurant_menu.menu_item import MenuItem
 
 # Create and save a new item to the menu
 item = MenuItem('Burger', 35)
@@ -16,6 +16,7 @@ print(f"Updated Item: {item.name} - Price: ${item.price}")
 
 # Now, delete the 'Veggie Burger' item from the menu (which is the one we updated)
 item.delete()  # Deletes 'Veggie Burger' from the Menu_Items table
+venv\Scripts\activate
 
 # Optionally, delete the 'Pizza' item (this will delete the item you created initially)
 # item2.delete()  # Uncomment this line to delete the Pizza item as well

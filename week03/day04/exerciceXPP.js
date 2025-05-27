@@ -27,7 +27,7 @@
 <button id="boldButton">make the paraghraph bold</button>
 <script src="exerciceXP.js"></script></body> */
 
-/*const h1 = document.querySelector('h1');
+const h1 = document.querySelector('h1');
 console.log(h1.textContent); // Output: Hello from HTML
 const Allps =document.querySelectorAll('p')
 if (Allps.length >= 4){
@@ -48,9 +48,9 @@ boldButton.addEventListener('click', function (){
         p.style.fontweight = 'bold'
         
  } );
-});*/
+});
 //exercie02 :
-/*
+
 const form = document.querySelector('form');
 
 const fnameInputById = document.querySelector('#fname');
@@ -90,10 +90,10 @@ const ul = document.querySelector('ul')
     const li2 = document.createElement('li');
     li2.textContent = lastname;
     ul.appendChild(li2);
-})*/
+})
 
 //exercice 03 :
-/*
+
 let allBoldItems;
 
 function getBoldItems() {
@@ -116,7 +116,7 @@ const paragraph = document.querySelector('p');
 paragraph.addEventListener('mouseover', highlight);
 paragraph.addEventListener('mouseout', returnItemsToDefault);
 
-getBoldItems(); */
+getBoldItems(); 
 //exercice 04:
 /*<!DOCTYPE html>
 <html lang="en">

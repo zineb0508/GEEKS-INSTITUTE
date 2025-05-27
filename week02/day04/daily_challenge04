@@ -1,0 +1,13 @@
+import requests
+
+# Fetch all countries from REST Countries API
+response = requests.get('https://restcountries.com/v3.1/all')
+
+# Convert response to JSON (list of countries)
+countries_data = response.json()
+
+# Print number of countries received
+print(f"Total countries fetched: {len(countries_data)}")
+
+# Show the first country's data to see the structure
+print(countries_data[0])

@@ -1,4 +1,4 @@
-from menu_item import MenuItem
+from week02.day04.restaurant_menu.menu_item import MenuItem
 from menu_manager import MenuManager
 
 def show_user_menu():

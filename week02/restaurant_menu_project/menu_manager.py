@@ -1,5 +1,5 @@
 import psycopg2
-from menu_item import MenuItem 
+from week02.day04.restaurant_menu.menu_item import MenuItem 
 
 class MenuManager:
 
