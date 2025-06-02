@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoboFriends</title>
+  <style>
+    body {
+  background-image: url('https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png?raw=true');
+  background-repeat: repeat;      
+  background-color:black;
+  background-size: auto;           
+  background-position: top left;   
+}
+
+    
+    input {
+      padding: 10px;
+      width: 300px;
+      margin: 20px auto;
+      display: block;
+      font-size: 16px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background-color: gray;
+      margin: 10px;
+      padding: 15px;
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      color:gray;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>RoboFriends</h1>
+  <input type="text" id="searchInput" placeholder="Search robots by name..." />
+  <div class="card-container" id="cardContainer"></div>
+
+  <script src="project.js"></script>
+</body>
+</html>
