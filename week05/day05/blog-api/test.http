@@ -1,0 +1,26 @@
+### Get all posts
+GET http://localhost:3000/posts
+
+### Get post with id 1
+GET http://localhost:3000/posts/1
+
+### Create a new post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "My new post",
+  "content": "This is some content."
+}
+
+### Update post with id 1
+PUT http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+  "title": "Updated Title",
+  "content": "Updated content."
+}
+
+### Delete post with id 1
+DELETE http://localhost:3000/posts/1
