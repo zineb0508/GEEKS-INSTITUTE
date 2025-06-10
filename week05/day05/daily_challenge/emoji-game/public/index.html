@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emoji Guessing Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #container {
+      text-align: center;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #emoji {
+      font-size: 4rem;
+      margin: 1rem 0;
+    }
+
+    button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    #feedback {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Guess the Emoji Name! 🤔</h1>
+
+    <div id="game">
+      <p id="emoji">❓</p>
+      <form id="guess-form"></form>
+    </div>
+
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
